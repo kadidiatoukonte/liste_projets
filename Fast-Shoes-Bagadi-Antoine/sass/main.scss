@@ -1,0 +1,70 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: #162238 !important;
+
+  a {
+    color: #DF6127 !important;
+  }
+  text-align: right !important;
+}
+
+.card-deck {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+
+  img {
+    // height: 400px;
+  }
+
+  .text-prix {
+    color: #DF6127;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.connexion_admin {
+  width: 400px;
+  margin: 300px auto;
+}
+
+footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #162238;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  svg {
+    margin: 10px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and(min-width:1300px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
